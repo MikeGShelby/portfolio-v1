@@ -188,7 +188,7 @@ section {
 
 .project-2 {
     grid-area: project2;
-    background-color: aquamarine;
+    background-color: gray;
     display: flex;
     flex-wrap: wrap;
 }
