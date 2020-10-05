@@ -3,6 +3,10 @@
     --primary-color:lightblue;
     --secondary-color: #024e76;
     --tertiary-color: #001933;
+
+    --header-font: 'Saira Semi Condensed', sans-serif;
+    --link-font:'Lalezar', cursive;
+    --paragraph-font:'Saira Semi Condensed', sans-serif;
   }
 * {
     margin: 0;
@@ -13,7 +17,7 @@
 
 body {
     color:var(--tertiary-color);
-    font-family: 'Lalezar', cursive;
+    font-family: var(--link-font);
     background-color: #0f65c01a;
 }
 
@@ -40,10 +44,10 @@ header {
 header h1 {
     font-weight: bold;
     font-size:40px;
-    font-family: 'Saira Semi Condensed', sans-serif;
+    letter-spacing: 4px;
+    font-family: var(--header-font);
     color: var(--primary-color);
     margin:0;
-
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -125,8 +129,9 @@ section {
 
 .section-title {
     justify-self: right;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 28px;
+    letter-spacing: 1px;
+    font-size: 32px;
+    font-family: var(--header-font);
     direction:rtl;
     width:70%;
     padding: 0px;
@@ -147,7 +152,7 @@ section {
 .bio-flex-wrapper{
     display: flex;
     font-size: 18px;
-    font-family: 'Saira Semi Condensed', sans-serif;
+    font-family: var(--paragraph-font);
     line-height: 1.6;
     flex-wrap:unset;
     padding: 0px 15px;
@@ -285,18 +290,6 @@ opacity: 0.7;
         font-size: 20px;
     }
 
-    footer h2, footer div {
-    text-align:center;
-        width: 100%;
-    }
-
-    .hero-cta, .hero-form{
-        width:100%;
-    }
-
-    .hero-cta {
-        text-align: center;
-    }
 
     .section-title {
         width:80%;
