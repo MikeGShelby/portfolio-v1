@@ -54,9 +54,9 @@ header h1, .sub-header-text{
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.sub-header-text{
+.sub-header-text {
     color:white;
-    font-size;30px;
+    font-size: 30px;
 }
 
 
@@ -175,7 +175,7 @@ section {
 }
 
 /*-- SECTION: PROJECTS --*/
-.sub-grid-wrapper{
+.sub-grid-wrapper {
     display: grid;
     gap:10px;
     grid-template-columns: 1fr 1fr 1fr;
