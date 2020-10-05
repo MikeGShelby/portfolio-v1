@@ -3,11 +3,13 @@
     --primary-color:lightblue;
     --secondary-color: #024e76;
     --tertiary-color: #001933;
+    --background-color:#0f65c01a;
 
     --header-font: 'Saira Semi Condensed', sans-serif;
     --link-font:'Lalezar', cursive;
     --paragraph-font:'Saira Semi Condensed', sans-serif;
   }
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +20,7 @@
 body {
     color:var(--tertiary-color);
     font-family: var(--link-font);
-    background-color: #0f65c01a;
+    background-color: var(--background-color);
 }
 
 
@@ -41,6 +43,7 @@ header {
     background-attachment: fixed;
     background-position: 80%;
 }
+
 header h1 {
     font-weight: bold;
     font-size:32px;
@@ -64,14 +67,14 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding:10px;
-    }
+}
 
 header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
     text-shadow: none;
     padding:10px;
-    }
+}
 
 header a {
     color: var(--primary-color);
@@ -138,7 +141,6 @@ section {
     padding: 0px;
 }
 
-
 .content {
     justify-self: left;
     align-self: center;
@@ -165,7 +167,6 @@ section {
     margin-bottom: 15px;
     margin-right: 15px;
 }
-
 
 /*-- SECTION: PROJECTS --*/
 .sub-grid-wrapper{
@@ -197,7 +198,6 @@ opacity: 0.7;
     padding:8px;
     margin-bottom:10px;
     background-color: var(--primary-color);
-
 }
 
 .project-1 {
@@ -252,7 +252,6 @@ opacity: 0.7;
     border-bottom: 3px solid var(--tertiary-color);
 }
 
-
 .contact-section ul li a {
     text-decoration: none;
     padding: 10px;
@@ -265,7 +264,6 @@ opacity: 0.7;
 }
 
 
-
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
@@ -273,6 +271,7 @@ opacity: 0.7;
         justify-content: center;
         position: relative;
     }
+
     header h1 {
         width: 100%;
         text-align:center;
