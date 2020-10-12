@@ -177,14 +177,14 @@ section {
 /*-- SECTION: PROJECTS --*/
 .sub-grid-wrapper {
     display: grid;
-    gap:10px;
+    gap:15px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:1fr 1fr 1fr;
     grid-template-areas:
     "project1 project1 project2"
     "project1 project1 project3"
     "project4 project5 .";
-    padding:0px 15px;
+    padding:0px 10px;
     width: auto;
 }
 
@@ -192,7 +192,8 @@ section {
     align-items: flex-end;
     justify-items: start;
     position: relative;
-    border:5px solid var(--primary-color);
+    border:5px solid rgba(0, 0, 0, 0.0);
+    border-radius: 10px;
     min-height:150px;
     filter: brightness(95%);
 }
@@ -201,13 +202,13 @@ section {
     opacity: 0.7;
     border: none;
     box-shadow: 1px 1px 6px 2px rgba(0,0,0,0.75);
-    size:
+    border-radius: 15px;
 
 }
 
 .project-title {
     padding:8px;
-    margin-bottom:10px;
+    margin-bottom:0px;
     background-color: var(--primary-color);
 
 }
@@ -231,21 +232,24 @@ section {
 
 .project-3 {
     grid-area: project3;
-    background-color: rebeccapurple;
+    background-image: url("../images/project3-placeholder-img.jpg");
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
 }
 
 .project-4 {
     grid-area: project4;
-    background-color: var(--tertiary-color);
+    background-image: url("../images/project4-placeholder-img.jpg");
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
 }
 
 .project-5 {
     grid-area: project5;
-    background-color: green;
+    background-image: url("../images/project5-placeholder-img.jpg");
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;
 }
