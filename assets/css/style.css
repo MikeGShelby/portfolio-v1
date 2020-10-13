@@ -132,7 +132,7 @@ section {
 }
 
 .main-grid {
-    width:80%;
+    width:90%;
     display: grid;
     grid-template-columns: .5fr 3fr;
     grid-template-rows: 3fr;
@@ -188,6 +188,7 @@ section {
     "project4 project5 .";
     padding:0px 10px;
     width: auto;
+    min-height:550px;
 }
 
 .project {
@@ -215,7 +216,7 @@ section {
 .project-1 {
     grid-area: project1;
     background-image: url("../images/run-buddy-screenshot.jpg");
-    min-height: 200px;
+    min-height: 175px;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -372,7 +373,6 @@ section {
 
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
-
     .bio-flex-wrapper img {
         float: none;
     }
