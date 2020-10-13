@@ -102,20 +102,21 @@ header a {
 .hero-subtitle {
     width: 50%;
     text-align: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px rgba(252, 249, 249, 0.5);
     padding:10px;
     justify-self: flex-end;
     align-self: flex-end;
     position: absolute;
     top: 215px;
     right:20px;
-    background-color: rgba(173, 276, 230, .6);
+   /*  background-color: rgba(173, 276, 230, .6); */
 }
 
 .hero-subtitle h2 {
-    font-style: italic;
+    color: white;
     font-size: 45px;
-    color:var(--secondary-color);
+    font-family: var(--paragraph-font);
+    /* color:var(--secondary-color); */
 }
 
 
