@@ -259,6 +259,23 @@ section {
     flex-wrap: wrap;
 }
 
+/*-- SECTION: SKILLS --*/
+.skills-section {
+    display: flex;
+    align-items:center;
+    list-style-type: none;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding:15px 0px;
+}
+
+.skills-section img {
+    flex-wrap: auto;
+    padding: 25px 25px;
+    max-height: 150px;
+}
+
+
 
 /*-- SECTION: CONTACT --*/
 .contact-section ul {
