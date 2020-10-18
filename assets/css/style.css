@@ -245,7 +245,7 @@ section {
 
 .project-4 {
     grid-area: project4;
-    background-image: url("../images/project4-placeholder-img.jpg");
+    background-image: url("../images/taskinator-screenshot.jpg");
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
