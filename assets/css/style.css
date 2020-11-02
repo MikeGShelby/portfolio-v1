@@ -34,8 +34,8 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    position: sticky;
-    position: -webkit-sticky;
+    /* position: sticky;
+    position: -webkit-sticky; */
     top: 0;
     z-index: 9999;
     background-image: url("../images/hero-bg.jpg");
@@ -134,7 +134,7 @@ section {
 }
 
 .main-grid {
-    width:90%;
+    /* width:90%; */
     display: grid;
     grid-template-columns: .5fr 3fr;
     grid-template-rows: 3fr;
@@ -182,49 +182,76 @@ section {
 /*-- SECTION: PROJECTS --*/
 .sub-grid-wrapper {
     display: grid;
-    gap:5px;
-    grid-template-columns: 1fr 1fr 1fr;
+    gap:25px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows:1fr 1fr 1fr;
     grid-template-areas:
-    "project1 project1 project2"
-    "project1 project1 project3"
-    "project4 project5 .";
+    "project1 project2"
+    "project3 project4"
+    "project5 project5";
     padding:0px 10px;
     width: auto;
     min-height:550px;
 }
 
+
 .project {
     align-items: flex-end;
     justify-items: start;
     position: relative;
-    min-height:150px;
+    min-height:300px;
     border-radius: 2px;
+    box-shadow: 2px 2px 2px rgb(0,0,0,.75);
+    transform: scale(1);
+    filter: brightness(100%);
+    transition: all .25s ease;
+    transition-property: transform, box-shadow, filter;
 }
 
 .project:hover {
     transform: scale(1.05);
     z-index: 99;
-    box-shadow: 1px 1px 6px 2px rgba(0,0,0,1);
-    filter: brightness(115%);
+    box-shadow: 3px 3px 6px 2px rgba(0,0,0,.7);
+    filter: brightness(105%);
     border-radius: 2px;
 
 }
 
-.project-title {
+.project-info {
+    display: flex;
+    width: 100%;
     padding:8px;
     margin-bottom:0px;
     background-color: var(--primary-color);
+    transition: width .5s;
+}
 
+
+/* .project-title {
+    width: 100%;
+    padding:8px;
+    margin-bottom:0px;
+    background-color: var(--primary-color);
+    transition: width .5s;
+} */
+
+/*-- testing new styles --*/
+.test {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
 }
 
 .project-1 {
     grid-area: project1;
     background-image: url("../images/run-buddy-screenshot.jpg");
-    min-height: 175px;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
+}
+
+.project-1:hover {
+    background-image: url("../images/run-buddy-screencapture.gif");
 }
 
 .project-2 {
@@ -274,7 +301,6 @@ section {
     padding: 25px 25px;
     max-height: 150px;
 }
-
 
 
 /*-- SECTION: CONTACT --*/
@@ -376,7 +402,7 @@ section {
     }
 
     .bio-flex-wrapper img {
-    float: left;
+        float: left;
     }
 
     .sub-grid-wrapper {
@@ -401,7 +427,7 @@ section {
         float: none;
     }
 
-      .contact-section ul {
+    .contact-section ul {
         display: block;
     }
 
