@@ -4,23 +4,38 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mike Shelby - Professional Portfolio</title>
-        <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Saira+Semi+Condensed:wght@400;900&display=swap" rel="stylesheet">
+
+        <!-- GOOGLE FONTS: LATO -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <!-- GOOGLE FONTS: ROBOTO -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+        <!-- STYLESHEET -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
 
     <body>
         <!-- HEADER -->
-        <header>
-            <h1><a href="/">Mike Shelby - <span class="sub-header-text">Professional Portfolio</span></a></h1>
+        <header class="header">
+            <a href="/">
+                <h1>
+                    Mike Shelby &#160; &#160;
+                    <span class="subheader-text">Full Stack Developer</span>
+                </h1>
+
+            </a>
             <!-- NAVIGATION -->
-            <nav>
+            <nav class="navigation">
                 <ul>
                 <li>
-                    <a href="#about-me">About Me</a>
+                    <a href="#about-me">About</a>
                 </li>
 
                 <li>
-                    <a href="#work">Work</a>
+                    <a href="#projects">Projects</a>
                 </li>
 
                 <li>
@@ -45,15 +60,12 @@
             </div>
         </section>
 
-        <main class="main-flex">
-            <section class="main-grid">
+        <main class="main">
+            <!-- <section class="main-grid"> -->
 
                 <!-- SECTION: "ABOUT ME" -->
-                <div id="about-me" class="section-title">
-                    <h3>About Me</h3>
-                </div>
-
                 <div class="about-section content">
+                    <h3 id="about-me" class="section-title">ABOUT</h3>
                     <div class="bio-flex-wrapper">
                         <img src="assets/images/self-image.jpg" alt="Mike Shelby"></img>
                         <div class="bio-summary">
@@ -70,13 +82,11 @@
 
 
                 <!-- SECTION: "WORK" -->
-                <div id="work" class="section-title">
-                    <h3>Work</h3>
-                </div>
-
                 <div class="project-section content">
-                    <div class="sub-grid-wrapper">
 
+                    <h3 id="projects" class="section-title">PROJECTS</h3>
+
+                    <div class="sub-grid-wrapper">
                         <a href="https://mikegshelby.github.io/run-buddy/" class="project-1 project test" target="_blank">
 
                         <div>
