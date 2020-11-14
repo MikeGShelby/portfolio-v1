@@ -1,14 +1,22 @@
 /*-- GLOBAL STYLES --*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--link-font);
+}
+
+
+/*-- VARIABLES --*/
 :root {
-    --primary-color:lightblue;
-    --primary-color-lighter:rgb(223, 240, 247);
-    --secondary-color: #024e76;
+    --primary-color:#00BFFF;
+    --primary-color-lighter:#77ddff;
+    --secondary-color: rgb(39, 43, 48);
     --tertiary-color: #001933;
     --background-color:#0f65c01a;
-
-    /* --header-font1: 'Saira Semi Condensed', sans-serif;
-    --link-font1:'Lalezar', cursive;
-    --paragraph-font1:'Saira Semi Condensed', sans-serif; */
 
     --header-font: 'Lato', sans-serif;
     --link-font: 'Lato', sans-serif;
@@ -16,31 +24,18 @@
   }
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color:var(--tertiary-color);
-}
-
-body {
-    color:var(--tertiary-color);
-    font-family: var(--link-font);
-}
-
 /*-- HEADER --*/
 /* side navigation menu */
 
 .header {
     height: 100%;
     width: 225px;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    position: fixed;
+    z-index: 1;
+    top: 0;
     left: 0;
-    background-image: linear-gradient(to right, rgb(246, 247, 248) 0%, rgb(255, 255, 255) 100%);
+    background-image: linear-gradient(to bottom, rgb(39, 43, 48) 0%,rgb(77, 91, 107) 100%);
     overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     box-shadow: 2px 1px 3px rgb(0,0,0,.75);
   }
 
@@ -49,16 +44,20 @@ body {
     letter-spacing: 1.5px;
     line-height: 2.6rem;
     font-family: var(--header-font);
+    text-shadow: none;
+    color: var(--primary-color);
     margin:0;
     padding: 30px 30px;
-    background-color: var(--primary-color-lighter);
-    /* transition: background-color .5s; */
-    transition: background-color .5s;
+    border-bottom: solid 2px gray;
+    transition: all .5s;
+    properties: background-color, text-shadow;
+
 }
 
 .header h1:hover {
-    background-color: var(--primary-color);
+    background-color: rgb(77, 91, 107);
     box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+    text-shadow: 2px 2px 2px black;
 }
 
 .subheader-text {
@@ -67,34 +66,36 @@ body {
     font-weight: 200;
     font-family: var(--paragraph-font);
     padding: 0px;
+    color: white;
 }
 
 .navigation ul {
     list-style: none;
-    /* padding-top:30px; */
 }
 
 .navigation a {
     display:block;
-    margin: 10px 15px;
+    margin: 0px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    padding:5px;
+    color: white;
+    padding:15px;
     border-radius: 1px;
     width: 100%;
-    transition: padding .5s;
+    background-color: none;
+    transition: all .5s;
+    properties: padding, background-color, font-weight;
 }
 
 .navigation a:hover {
-    background: var(--primary-color);
+    font-weight: bolder;
+    background-color: rgb(77, 91, 107);
     padding-left:60px;
+    color: var(--primary-color);
 }
-
 header a {
-    /* color: var(--primary-color); */
     text-decoration: none;
 }
-
 
 /*-- HERO/JUMBOTRON --*/
 .hero {
@@ -132,21 +133,17 @@ header a {
     background-color: rgba(248, 251, 253, 0.849);
 }
 
-.section-title-bg {
-    background-image: linear-gradient(to top, rgb(37, 70, 161) 0%, rgb(71, 107, 206) 100%);
-}
-
 .section-title {
-    color: white;
+    color: var(--secondary-color);
     letter-spacing: 1px;
-    font-size: 32px;
+    font-size: 40px;
     font-family: var(--header-font);
-    font-weight: 100;
-    padding: 20px 0px 20px 275px;
+    font-weight: 800;
+    padding: 50px 0px 50px 300px;
 }
 
 .section-content {
-    padding: 40px 40px 40px 275px;
+    padding: 0px 100px 40px 300px;
     min-height: 100vh;
 }
 
@@ -170,6 +167,10 @@ header a {
 }
 
 /*-- SECTION: PROJECTS --*/
+.project-section {
+    background-image: linear-gradient(to bottom right, rgb(231, 229, 229) 0%, rgb(196, 196, 196) 100%);
+}
+
 .project-grid {
     display: flex;
     flex-wrap: wrap;
@@ -185,7 +186,6 @@ header a {
     width: auto;
     min-height:550px;
 }
-
 
 .project {
     align-items: flex-end;
@@ -228,12 +228,6 @@ header a {
     transition: width .5s;
 } */
 
-/*-- testing new styles --*/
-.test {
-    display: flex;
-    justify-content: space-between;
-    background-color: blue;
-}
 
 .project-1 {
     grid-area: project1;
@@ -280,13 +274,6 @@ header a {
 }
 
 /*-- SECTION: SKILLS --*/
-.skills-section {
-    padding: 40px 40px 40px 275px;
-    height: 100vh;
-
-}
-
-
 .skills-icons {
     display: flex;
     align-items:center;
@@ -304,29 +291,89 @@ header a {
 
 
 /*-- SECTION: CONTACT --*/
+.contact-section {
+    background-image: linear-gradient(to bottom right, var(--secondary-color) 0%, rgb(117, 123, 129) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .section-title {
+    color: white;
+}
+
+.contact-section .section-content {
+   min-height:50vh;
+}
+
+.contact-form {
+    width: 75%;
+}
+
+.contact-form input,.contact-form textarea{
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding:20px 15px;
+    font-size:16px;
+    color:var(--secondary-color);
+    width:100%;
+    margin-bottom: 5px;
+    margin-top:5px;
+    border-radius: 1px;
+    background-color: rgba(255,255,255, 0.75);
+}
+
+.contact-form input:focus,.contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: var(--primary-color);
+    color:var(--secondary-color);
+    text-align: center;
+    padding:20px 0;
+    font-size: 16px;
+    border-radius: 1px;
+}
+
+.contact-form button:hover {
+    color: var(--primary-color);
+    background: var(--tertiary-color);
+  }
+
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    min-height:30vh;
+}
+
 .contact-section ul {
     display: flex;
     align-items:center;
     list-style-type: none;
-    justify-content: space-around;
+    justify-content: space-between;
     padding:30px 0px;
+    padding-left: 160px;
     font-size: 18px;
-}
 
-.contact-section ul li {
-    border-bottom: 3px solid var(--tertiary-color);
 }
 
 .contact-section ul li a {
     text-decoration: none;
-    padding: 10px;
+    padding: 0px 25px;
     border-radius: 3px;
+    font-size: 3rem;
+    color: white;
 }
 
 .contact-section ul li a:hover {
-    padding:10px;
-    background-color: var(--tertiary-color);
-    color: white;
+    color: var(--primary-color);
     border-radius: 3px;
 }
 
