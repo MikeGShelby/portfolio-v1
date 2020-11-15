@@ -4,149 +4,230 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mike Shelby - Professional Portfolio</title>
-        <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Saira+Semi+Condensed:wght@400;900&display=swap" rel="stylesheet">
+
+        <!-- GOOGLE FONTS: LATO -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <!-- GOOGLE FONTS: ROBOTO -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+        <!-- FONT ICONS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+        <!-- STYLESHEET -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
 
     <body>
         <!-- HEADER -->
-        <header>
-            <h1><a href="/">Mike Shelby - <span class="sub-header-text">Professional Portfolio</span></a></h1>
+        <header class="header">
+            <a href="/" class="title-link">
+                <h1>
+                    Mike Shelby &#160; &#160;
+                    <span class="subheader-text">Full Stack Developer</span>
+                </h1>
+            </a>
             <!-- NAVIGATION -->
-            <nav>
+            <nav class="navigation">
                 <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
+                    <li>
+                        <a href="#about-me">About</a>
+                    </li>
 
-                <li>
-                    <a href="#work">Work</a>
-                </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
 
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
 
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-
-                <li>
-                    <a href="https://www.linkedin.com/in/mikeshelby/" target="_blank">Resume</a>
-                </li>
+                    <li>
+                        <a href="#contact">Contact Me</a>
+                    </li>
                 </ul>
+
             </nav>
         </header>
 
-        <!-- HERO/JUMBOTRON -->
-        <section class="hero">
-            <div class="hero-subtitle">
-                <h2>Full-Stack Web Developer</h2>
-            </div>
-        </section>
+        <main class="main">
+            <!-- HERO/JUMBOTRON -->
+            <section class="hero">
+                <div class="hero-subtitle">
+                    <h2>Full-Stack Web Developer</h2>
+                </div>
+            </section>
 
-        <main class="main-flex">
-            <section class="main-grid">
+            <!-- SECTION: "ABOUT ME" -->
+            <section class="about-section">
 
-                <!-- SECTION: "ABOUT ME" -->
-                <div id="about-me" class="section-title">
-                    <h3>About Me</h3>
+                <!-- section title -->
+                <div class="section-title-bg">
+                    <h3 id="about-me" class="section-title">ABOUT</h3>
                 </div>
 
-                <div class="about-section content">
-                    <div class="bio-flex-wrapper">
-                        <img src="assets/images/self-image.jpg" alt="Mike Shelby"></img>
-                        <div class="bio-summary">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sint laborum obcaecati repellendus sit velit architecto, unde cumque, eveniet nostrum inventore earum culpa fuga blanditiis, ex saepe voluptas quia id.
-                            </p>
+                <!-- section content -->
+                <div class="section-content about-content">
+
+
+                    <img src="assets/images/self-image.jpg" alt="Mike Shelby"></img>
+                    <div class="about-summary">
+                            <p>As both a web developer and a registered dietitian, I bring with me a unique perspective and approach to the technology field. To be sure, my five years of experience working as a health care professional has given me great insight into an industry replete with poorly designed, inefficient, and unintuitive technological tools. Thanks to my enthusiasm for creating user-friendly technological solutions for both myself and for others, becoming a web developer was a natural progression in my professional journey.</p>
                             <br>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta enim perferendis vitae corrupti ab, nulla libero! Iusto, quis, earum, laudantium officia eius sed vero deserunt magni doloribus perspiciatis aliquam. Non.
-                            </p>
-                        </div>
+
+                            <p>I enjoy using my strong attention to detail, analytical mindset, and problem-solving skills to make applications as simple and efficient to use as possible. Moreover, I would describe myself as a lifelong learner with a continuously evolving skillset, which lends itself well to this ever-changing field. I am eager to bring my unique outlook and experience to a company that shares my appreciation for developing innovative solutions to everyday societal challenges.</p>
                     </div>
                 </div>
+            </section>
 
 
-                <!-- SECTION: "WORK" -->
-                <div id="work" class="section-title">
-                    <h3>Work</h3>
+            <!-- SECTION: "PROJECTS" -->
+            <section class="project-section">
+
+                <!-- section title -->
+                <div  class="section-title-bg">
+                    <h3 id="projects" class="section-title">PROJECTS</h3>
                 </div>
 
-                <div class="project-section content">
-                    <div class="sub-grid-wrapper">
+                <!-- section content -->
+                <div class="project-grid project-content section-content">
 
-                        <a href="https://mikegshelby.github.io/run-buddy/" class="project-1 project" target="_blank">
+                    <a href="https://mikegshelby.github.io/run-buddy/" class="project-1 project" target="_blank">
+                        <div class="project-info">
                             <div class="project-title">
                                 <h4>Run Buddy</h4>
                                 <h5>HTML/CSS</h5>
                             </div>
-                        </a>
+                        </div>
+                    </a>
 
-                        <a href="https://mikegshelby.github.io/password-generator/" class="project-2 project" target="_blank">
+                    <a href="https://mikegshelby.github.io/taskinator/" class="project-3 project" target="_blank">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h4>CinaSearch</h4>
+                                <h5>HTML/CSS/JavaScript</h5>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://mikegshelby.github.io/password-generator/" class="project-2 project" target="_blank">
+                        <div class="project-info">
                             <div class="project-title">
                                 <h4>Password Generator</h4>
-                                <h5>HTML/CSS/JAVASCRIPT</h5>
+                                <h5>HTML/CSS/JavaScript</h5>
                             </div>
-                        </a>
+                        </div>
+                    </a>
 
-                        <a href="https://github.com/MikeGShelby?tab=repositories" class="project-3 project" target="_blank">
+                    <a href="https://mikegshelby.github.io/taskinator/" class="project-4 project" target="_blank">
+                        <div class="project-info">
                             <div class="project-title">
-                                <h4>Project Title 3</h4>
-                                <h5>Project Type</h5>
+                                <h4>Taskinator</h4>
+                                <h5>HTML/CSS/JavaScript</h5>
                             </div>
-                        </a>
+                        </div>
+                    </a>
 
-                        <a href="https://mikegshelby.github.io/taskinator/" class="project-4 project" target="_blank">
-                            <div class="project-title">
-                                <h4>Project Title 4</h4>
-                                <h5>Project Type</h5>
-                            </div>
-                        </a>
-
-                        <a href="https://github.com/MikeGShelby?tab=repositories" class="project-5 project" target="_blank">
+                    <a href="https://github.com/MikeGShelby?tab=repositories" class="project-5 project" target="_blank">
+                        <div class="project-info">
                             <div class="project-title">
                                 <h4>Project Title 5</h4>
                                 <h5>Project Type</h5>
                             </div>
-                        </a>
-                    </div>
-                </div>
+                        </div>
+                    </a>
 
-                <!-- SECTION: "SKILLS" -->
-                <div id="skills" class="section-title">
-                    <h3>Skills</h3>
-                </div>
-
-                <div class="skills-section content">
-
-                    <img src="assets/images/html5.png" alt="HTML5-logo"></img>
-                    <img src="assets/images/css3.png" alt="CSS3-logo"></img>
-                    <img src="assets/images/javascript.png" alt="javascript-logo"></img>
-                    <img src="assets/images/github.png" alt="github-logo"></img>
-                    <img src="assets/images/photoshop.png" alt="photoshop-logo"></img>
+                    <a href="https://mikegshelby.github.io/weather-dashboard/" class="project-6 project" target="_blank">
+                        <div class="project-info">
+                            <div class="project-title">
+                                <h4>Weather Dashboard</h4>
+                                <h5>HTML/CSS/JavaScript</h5>
+                            </div>
+                        </div>
+                    </a>
 
                 </div>
+            </section>
 
-                <!-- SECTION: "CONTACT ME" -->
-                <div id="contact-me" class="section-title">
-                    <h3>Contact Me</h3>
+            <!-- SECTION: "SKILLS" -->
+            <section class="skills-section">
+
+                <!-- section title -->
+                <div class="section-title-bg">
+                    <h3 id="skills" class="section-title">SKILLS</h3>
                 </div>
 
-                <div class="contact-section content">
-                   <ul>
-                       <li><a href="tel:555.555.5555">555.555.5555</a></li>
-                       <li><a href="mailto:mikegshelby@gmail.com">mikegshelby@gmail.com</a></li>
-                       <li><a href="https://github.com/MikeGShelby" target="_blank">GitHub</a></li>
-                       <li><a href="https://www.linkedin.com/in/mikeshelby/" target="_blank">Linkedin</a></li>
+                <!-- section content -->
+
+                <div class="skill-icons section-content">
+                    <a href="https://www.w3.org/TR/html52/" class="skill-link" target="_blank">
+                        <img src="assets/images/html5.png" alt="HTML5-logo"></img>
+                    </a>
+
+                    <a href="https://www.w3.org/Style/CSS/" class="skill-link" target="_blank">
+                        <img src="assets/images/css3.png" alt="CSS3-logo"></img>
+                    </a>
+
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="skill-link" target="_blank">
+                        <img src="assets/images/javascript.png" alt="javascript-logo"></img>
+                    </a>
+
+                    <a href="https://getbootstrap.com/" class="skill-link" target="_blank">
+                        <img src="assets/images/bootstrap.png" alt="bootstrap-logo"></img>
+                    </a>
+
+                    <a href="https://bulma.io/" class="skill-link" target="_blank">
+                        <img src="assets/images/bulma.png" alt="bulma-logo"></img>
+                    </a>
+
+                    <a href="https://jquery.com/" class="skill-link" target="_blank">
+                        <img src="assets/images/jquery.png" alt="jquery-logo"></img>
+                    </a>
+
+                    <a href="https://nodejs.org/en/about/" class="skill-link" target="_blank">
+                        <img src="assets/images/nodejs.png" alt="nodejs-logo"></img>
+                    </a>
+
+                    <a href="https://github.com/" class="skill-link" target="_blank">
+                        <img src="assets/images/github.png" alt="github-logo"></img>
+                    </a>
+
+                    <a href="https://www.adobe.com/products/photoshop.html?sdid=KKQIN&mv=search&kw=photoshop&ef_id=Cj0KCQiAwMP9BRCzARIsAPWTJ_GooIzDnvjfBZ2KAA7AVCbdfzBZwIG2eg99y4AERFWiuhXV9ok1U3UaAmKUEALw_wcB:G:s&s_kwcid=AL!3085!3!442365416141!e!!g!!adobe%20photoshop&gclid=Cj0KCQiAwMP9BRCzARIsAPWTJ_GooIzDnvjfBZ2KAA7AVCbdfzBZwIG2eg99y4AERFWiuhXV9ok1U3UaAmKUEALw_wcB" class="skill-link" target="_blank">
+                        <img src="assets/images/photoshop.png" alt="photoshop-logo"></img>
+                    </a>
+                </div>
+            </section>
+
+            <!-- SECTION: "CONTACT ME" -->
+            <section class="contact-section">
+
+                <!-- section title -->
+                <div class="section-title-bg">
+                    <h3 id="contact" class="section-title">CONTACT</h3>
+                </div>
+
+                <!-- section content -->
+                <div class="section-content">
+                        <form class="contact-form" action="mailto:mikegshelby@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+                            <input placeholder="Name" type="text" name="name" required>
+                            <input placeholder="Enter email" type="email" name="email" required>
+                            <textarea placeholder="Your message" type="text" name="message"></textarea>
+                            <button class="submit-button" type="submit" value="SUBMIT">SUBMIT</button>
+                        </form>
+                </div>
+
+                <div class="contact-links">
+                    <ul>
+                        <li><a href="mailto:mikegshelby@gmail.com"><i class="fas fa-envelope-open-text"></i></a></li>
+                        <li><a href="https://github.com/MikeGShelby" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mikeshelby/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                     </ul>
                 </div>
 
             </section>
+
         </main>
-
-
     </body>
-
 </html>
