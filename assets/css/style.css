@@ -47,17 +47,18 @@ body {
     text-shadow: none;
     color: var(--primary-color);
     margin:0;
-    padding: 30px 30px;
+    padding: 20px 20px;
+    border-left: solid 8px rgba(0,0,0,0);
     border-bottom: solid 2px gray;
     transition: all .5s;
     properties: background-color, text-shadow;
-
 }
 
 .header h1:hover {
     background-color: rgb(77, 91, 107);
     box-shadow: 2px 2px 2px rgba(0,0,0,.3);
     text-shadow: 2px 2px 2px black;
+    border-left: solid 8px var(--primary-color);
 }
 
 .subheader-text {
@@ -92,6 +93,7 @@ body {
     background-color: rgb(77, 91, 107);
     padding-left:60px;
     color: var(--primary-color);
+    border-left: solid 8px var(--primary-color);
 }
 header a {
     text-decoration: none;
@@ -161,7 +163,6 @@ header a {
     font-family: var(--paragraph-font);
     line-height: 3rem;
     flex-wrap:unset;
-
 }
 
 .about-content img {
@@ -170,9 +171,12 @@ header a {
     margin-bottom: 15px;
     margin-right: 15px;
     border-radius: 2px;
-    float: left;
     padding-right: 10px;
     padding-bottom: 10px;
+}
+
+.about-summary {
+    margin-top: -.8rem;
 }
 
 
@@ -184,13 +188,11 @@ header a {
 .project-grid {
     display: flex;
     flex-wrap: wrap;
-    flex-flow: wrap;
-    width: 100%;
-    min-height:100%;
 }
 
 .project {
     align-items: flex-end;
+    flex-grow: 1;
     justify-items: start;
     min-height:350px;
     min-width: 350px;
@@ -245,7 +247,7 @@ header a {
 }
 
 .project-3 {
-    background-image: url("../images/project3-placeholder-img.jpg");
+    background-image: url("../images/cinasearch-screenshot.jpg");
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -286,6 +288,17 @@ header a {
     padding: 25px 25px;
     max-height: 150px;
 }
+
+.skill-link {
+    text-decoration: none;
+    filter: none;
+    transition: filter 0.25s;
+}
+
+.skill-link:hover {
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
 
 
 /*-- SECTION: CONTACT --*/
@@ -392,26 +405,6 @@ header a {
 
     .hero-subtitle h2 {
         justify-self: center;
-        width: 100%;
-    }
-
-    .main-grid {
-        display:flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .section-title {
-        display: flex;
-        direction:ltr;
-        width: 100%;
-    }
-
-    .section-title h3 {
-        justify-self:center;
-        text-align: center;
-        border-bottom: 4px solid #001933;
-        padding:0px;
         width: 100%;
     }
 
