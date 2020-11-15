@@ -106,6 +106,7 @@ header a {
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
+    overflow: hidden;
 }
 
 .hero-subtitle {
@@ -164,6 +165,13 @@ header a {
     margin-bottom: 15px;
     margin-right: 15px;
     border-radius: 2px;
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.about-summary {
+    float: right;
 }
 
 /*-- SECTION: PROJECTS --*/
@@ -175,26 +183,18 @@ header a {
     display: flex;
     flex-wrap: wrap;
     flex-flow: wrap;
-    justify-content: space-between;
-    /* gap:100px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr;
-    grid-template-areas:
-    "project1 project2"
-    "project3 project4"
-    "project5 project5"; */
-    width: auto;
-    min-height:550px;
+    width: 100%;
+    min-height:100%;
 }
 
 .project {
     align-items: flex-end;
     justify-items: start;
-
-    min-height:300px;
-    min-width: 300px;
+    min-height:350px;
+    min-width: 350px;
+    margin:10px;
     border-radius: 2px;
-    box-shadow: 2px 2px 2px rgb(0,0,0,.75);
+    box-shadow: 2px 2px 2px rgb(0,0,0,.5);
     transform: scale(1);
     filter: brightness(100%);
     transition: all .25s ease;
@@ -207,18 +207,18 @@ header a {
     box-shadow: 3px 3px 6px 2px rgba(0,0,0,.7);
     filter: brightness(105%);
     border-radius: 2px;
-
 }
+
 
 .project-info {
     display: flex;
     width: 100%;
+    overflow: hidden;
     padding:8px;
     margin-bottom:0px;
-    background-color: var(--primary-color);
-    transition: width .5s;
+    /* background-color: var(--primary-color); */
+    background-color: white;
 }
-
 
 /* .project-title {
     width: 100%;
@@ -228,21 +228,14 @@ header a {
     transition: width .5s;
 } */
 
-
 .project-1 {
-    grid-area: project1;
     background-image: url("../images/run-buddy-screenshot.jpg");
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
 }
 
-.project-1:hover {
-    background-image: url("../images/run-buddy-screencapture.gif");
-}
-
 .project-2 {
-    grid-area: project2;
     background-image: url("../images/password-generator-screenshot.png");
     background-size: cover;
     display: flex;
@@ -250,7 +243,6 @@ header a {
 }
 
 .project-3 {
-    grid-area: project3;
     background-image: url("../images/project3-placeholder-img.jpg");
     background-size: cover;
     display: flex;
@@ -258,7 +250,6 @@ header a {
 }
 
 .project-4 {
-    grid-area: project4;
     background-image: url("../images/taskinator-screenshot.jpg");
     background-size: cover;
     display: flex;
@@ -266,13 +257,18 @@ header a {
 }
 
 .project-5 {
-    grid-area: project5;
     background-image: url("../images/project5-placeholder-img.jpg");
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
 }
 
+.project-6 {
+    background-image: url("../images/weather-dashboard-screenshot.jpg");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
 /*-- SECTION: SKILLS --*/
 .skills-icons {
     display: flex;
@@ -310,7 +306,6 @@ header a {
 }
 
 .contact-form input,.contact-form textarea{
-    border: 1px solid var(--secondary-color);
     display: block;
     padding:20px 15px;
     font-size:16px;
@@ -341,6 +336,7 @@ header a {
 .contact-form button:hover {
     color: var(--primary-color);
     background: var(--tertiary-color);
+    cursor: pointer;
   }
 
 
@@ -452,15 +448,6 @@ header a {
         float: left;
     }
 
-    .project-grid {
-        display: block;
-    }
-
-    .project-grid .project {
-        margin: 10px;
-        height:200px;
-        width: auto;
-    }
 
   }
 
