@@ -152,7 +152,7 @@ header a {
 
 .section-content {
     padding: 0px 100px 40px 300px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 /*-- SECTION: ABOUT ME --*/
