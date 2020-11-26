@@ -5,7 +5,7 @@
 * [Built With](#built-with)
 * [Website Screenshot](#screenshot)
 * [Website URL](#website)
-* [Contact]
+* [Contact](#contact)
 
 ## Purpose
 A website that features my web development projects.
