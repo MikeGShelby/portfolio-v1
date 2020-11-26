@@ -3,7 +3,7 @@
 ## Table of Contents
 * [Purpose](#purpose)
 * [Built With](#built-with)
-* [Website Screenshot](#screenshot)
+* [Website Screenshot](#website-screenshot)
 * [Website URL](#website)
 * [Contact](#contact)
 
