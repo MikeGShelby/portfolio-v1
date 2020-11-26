@@ -1,5 +1,8 @@
 # Mike Shelby - Professional Portfolio
 
+# Table of Contents
+* [Purpose]
+
 ## Purpose
 A website that features my web development projects.
 
