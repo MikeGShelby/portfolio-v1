@@ -1,7 +1,10 @@
 # Mike Shelby - Professional Portfolio
 
-# Table of Contents
-* [Purpose]
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
 
 ## Purpose
 A website that features my web development projects.
