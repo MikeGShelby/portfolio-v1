@@ -1,10 +1,11 @@
 # Mike Shelby - Professional Portfolio
 
 ## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)
+* [Purpose](#purpose)
+* [Built With](#built-with)
+* [Website Screenshot](#screenshot)
+* [Website URL](#website)
+* [Contact]
 
 ## Purpose
 A website that features my web development projects.
