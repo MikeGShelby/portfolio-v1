@@ -40,7 +40,7 @@ body {
   }
 
 .header h1 {
-    font-size:35px;
+    font-size:2rem;
     letter-spacing: 1.5px;
     line-height: 2.6rem;
     font-family: var(--header-font);
@@ -62,7 +62,7 @@ body {
 }
 
 .subheader-text {
-    font-size: 18px;
+    font-size: 1rem;
     letter-spacing: .2px;
     font-weight: 200;
     font-family: var(--paragraph-font);
@@ -84,8 +84,8 @@ body {
     border-radius: 1px;
     width: 100%;
     background-color: none;
-    transition: all .5s;
-    properties: padding, background-color, font-weight;
+    transition: all .3s ease-in-out;
+    /* properties: padding, background-color, font-weight; */
 }
 
 .navigation a:hover {
@@ -158,7 +158,7 @@ header a {
 /*-- SECTION: ABOUT ME --*/
 .about-content {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight:300;
     font-family: var(--paragraph-font);
     line-height: 3rem;
@@ -188,6 +188,8 @@ header a {
 .project-grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .project {
@@ -233,15 +235,17 @@ header a {
 } */
 
 .project-1 {
-    background-image: url("../images/run-buddy-screenshot.jpg");
+    background-image: url("../images/diet-delivery-screenshot-small.jpg");
     background-size: cover;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
 .project-2 {
-    background-image: url("../images/password-generator-screenshot.png");
+    background-image: url("../images/tech-blog-screenshot.jpg");
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
 }
@@ -249,30 +253,43 @@ header a {
 .project-3 {
     background-image: url("../images/cinasearch-screenshot.jpg");
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
 }
 
 .project-4 {
-    background-image: url("../images/taskinator-screenshot.jpg");
+    background-image: url("../images/password-generator-screenshot.png");
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
 }
 
 .project-5 {
-    background-image: url("../images/work-day-scheduler-screenshot.jpg");
+    background-image: url("../images/taskinator-screenshot.jpg");
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-wrap: wrap;
 }
 
 .project-6 {
+    background-image: url("../images/work-day-scheduler-screenshot.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-7 {
     background-image: url("../images/weather-dashboard-screenshot.jpg");
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
 }
+
+
 /*-- SECTION: SKILLS --*/
 .skills-icons {
     display: flex;
