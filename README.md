@@ -1,5 +1,11 @@
 # Mike Shelby - Professional Portfolio
 
+## Table of Contents
+* [Purpose](#purpose)
+* [Built With](#built-with)
+* [Website Screenshot](#website-screenshot)
+* [Website URL](#website)
+
 ## Purpose
 A website that features my web development projects.
 
